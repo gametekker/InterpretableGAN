@@ -1,0 +1,11 @@
+# created by virtualenv automatically
+/bin
+/data
+/lib
+/share
+/upscale
+/used_data
+.Python
+convTranspose.py
+generator_I.py
+pyvenv.cfg
