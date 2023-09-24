@@ -54,6 +54,7 @@ def extract_png_tensors_from_jar(jar_path):
     # Stack all image tensors together
     return torch.stack(images)
 
+# Prepare input deck from texture/resource packs
 def prepare_files(feature_pack_dir: str, label_pack_dir: str, resolution: int):
     data_dir=os.path.join(config()["project_dir"],"data_dir")
     os.makedirs(data_dir, exist_ok=True)
