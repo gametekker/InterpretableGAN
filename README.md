@@ -1,4 +1,4 @@
-# Results: High Resolution Modded Textures - generated through Machine Learning
+# Results: Upscaled Modded Textures - generated through Machine Learning
 
 ## Currently supports 16x -> 32x, 64x
 ![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.49.21%20AM.png)
