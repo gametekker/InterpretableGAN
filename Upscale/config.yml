@@ -1,0 +1,5 @@
+project_dir: '/Users/gametekker/Documents/ResNetImplementation'
+resolution: 64
+scaling_factor: 4
+n_blocks: 10
+device: "mps"

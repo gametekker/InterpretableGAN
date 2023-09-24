@@ -3,9 +3,9 @@
 /data
 /lib
 /share
-/upscale
+/TextureGAN
 /used_data
 .Python
 convTranspose.py
 generator_I.py
-pyvenv.cfg
+old.txt
