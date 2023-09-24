@@ -5,6 +5,7 @@
 /share
 /TextureGAN
 /used_data
+*.DS_Store
 .Python
 convTranspose.py
 generator_I.py
