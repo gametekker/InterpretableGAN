@@ -1,7 +1,6 @@
 from globals import config, hyperparameters
 from ExperimentLogger import ExperimentLogger
 import sys
-experimentlogger = None
 
 def main():
 
@@ -20,9 +19,8 @@ def main():
 
     elif action == 'train':
         from ResNetImplementation.PerformTraining import PerformTraining
-        global experimentlogger
         experimentlogger= ExperimentLogger()
-        PerformTraining(config(), hyperparameters())
+        PerformTraining(config(), hyperparameters(),experimentlogger)
 
     elif action == 'testmod':
         from Data.DataUtils import extract_png_tensors_from_jar
