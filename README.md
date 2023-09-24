@@ -1,13 +1,13 @@
 # Results: High Resolution Modded Textures - generated through Machine Learning
 
 ![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.17.15%20AM.png)
-500 epochs, perceptual loss only
+500 epochs, adversarial loss annealing + perceptual loss
 ![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.17.22%20AM.png)
-500 epochs, adversarial loss annealing + perceptual loss
-![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.27.26%20AM.png)
 500 epochs, perceptual loss only
-![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.27.57%20AM.png)
+![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.27.26%20AM.png)
 500 epochs, adversarial loss annealing + perceptual loss
+![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.27.57%20AM.png)
+500 epochs, perceptual loss only
 ![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.26.17%20AM.png)
 Able to work with 64x upscale as well as 32x
 
