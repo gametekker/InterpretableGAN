@@ -6,14 +6,15 @@ import torch
 import copy
 from View.make_plots import process_and_save_images_as_pdf
 
+# Indexes the model snapshots and includes helper functions for viewing etc.
 class ExperimentLogger:
     def __init__(self):
-        # Set the name based on the package and system date and time
+        # Set name based on package and system date and time
         package_name = os.path.basename(os.path.dirname(__file__))  # Assuming file resides directly inside package folder
         current_time = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
         self.name = f"{package_name}_{current_time}"
 
-        # Set the directory path
+        # Set directory path
         self.dir = os.path.join(config()["project_dir"], self.name)
         if not os.path.exists(self.dir):
             os.makedirs(self.dir)
@@ -37,10 +38,10 @@ class ExperimentLogger:
         with open(path, 'r') as file:
             data = yaml.safe_load(file)
 
-        # Append the new snapshot name to the list
+        # Append new snapshot name to list
         data['model_snapshots'].append(name)
 
-        # Write the updated data back to the file
+        # Write updated data back to file
         with open(path, 'w') as file:
             yaml.safe_dump(data, file)
 
@@ -55,8 +56,9 @@ class ExperimentLogger:
             instance.model_snapshots = info["model_snapshots"]
         return instance
 
+    # Takes in a input tensor and index of saved model, returns outputs of that model
     def get_snapshot(self, tensors, index=-1):
-        # Check if index is out of bounds
+        # Check if index out of bounds
         if index >= len(self.model_snapshots) or index < -len(self.model_snapshots):
             index = -1
         snapshot = os.path.join(self.dir, self.model_snapshots[index])
