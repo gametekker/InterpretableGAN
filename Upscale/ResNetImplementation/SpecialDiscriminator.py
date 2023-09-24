@@ -1,3 +1,7 @@
+"""
+Vinodababu, S (2020). a-PyTorch-Tutorial-to-Super-Resolution (Version 1.0) [Software]. Available at https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Super-Resolution/blob/master/models.py
+"""
+
 import torch.nn as nn
 class ConvolutionalBlock(nn.Module):
     """
