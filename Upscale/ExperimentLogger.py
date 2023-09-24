@@ -50,7 +50,7 @@ class ExperimentLogger:
         instance.dir = directory
         instance.name = os.path.basename(directory)
         # Assuming model snapshots are stored in a text file named 'model_snapshots.txt'
-        with open(os.path.join(directory, f'{instance.name}.yml'), 'r') as file:
+        with open(os.path.join(directory, 'config.yml'), 'r') as file:
             info=yaml.safe_load(file)
             instance.model_snapshots = info["model_snapshots"]
         return instance
@@ -61,4 +61,5 @@ class ExperimentLogger:
             index = -1
         snapshot = os.path.join(self.dir, self.model_snapshots[index])
         generator = torch.load(snapshot)["model"]
+        os.makedirs(os.path.join(config()["project_dir"],"test_dir"),exist_ok=True)
         process_and_save_images_as_pdf(tensors, generator, os.path.join(config()["project_dir"],"test_dir"))
