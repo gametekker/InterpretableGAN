@@ -8,7 +8,7 @@ Please refer to [how_to_use](https://github.com/gametekker/InterpretableGAN/blob
 ## Currently supports 16x -> 32x, 64x
 ![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.49.37%20AM.png)
 Industrial craft 2
-![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.54.31%20AM.png)
+![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%205.43.07%20PM.png)
 Industrial craft 2
 ![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.53.10%20AM.png)
 
