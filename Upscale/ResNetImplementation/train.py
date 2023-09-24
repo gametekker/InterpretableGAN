@@ -2,9 +2,8 @@ import copy
 import os
 import torch
 import torch.nn as nn
-from run import experimentlogger
 
-def train_loop(generator, discriminator, dataloader, optimizer_G, optimizer_D, adversarial_loss=nn.BCELoss(),total_loss=None,device=torch.device("cpu"),start_epoch=0,end_epoch=10000):
+def train_loop(experimentlogger,generator, discriminator, dataloader, optimizer_G, optimizer_D, adversarial_loss=nn.BCELoss(),total_loss=None,device=torch.device("cpu"),start_epoch=0,end_epoch=10000):
 
     # Training loop
     full_path = os.path.abspath(__file__)
@@ -73,7 +72,7 @@ def train_loop(generator, discriminator, dataloader, optimizer_G, optimizer_D, a
 
 
         # Save copy of model every epoch
-        if (epoch + 1) % 25 == 0:
+        if (epoch + 1) % 10 == 0:
             with torch.no_grad():
                 generator_cpu=copy.deepcopy(generator)
                 generator_cpu=generator_cpu.to("cpu")
@@ -86,7 +85,7 @@ def train_loop(generator, discriminator, dataloader, optimizer_G, optimizer_D, a
                            save_path)
                 experimentlogger.add_model_snapshot(save_path)
 
-def train_generator(generator, dataloader, optimizer_G, loss, device=torch.device("cpu"),end_epoch=25):
+def train_generator(experimentlogger,generator, dataloader, optimizer_G, loss, device=torch.device("cpu"),end_epoch=25):
 
     # Training loop
     full_path = os.path.abspath(__file__)
