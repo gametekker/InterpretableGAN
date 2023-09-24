@@ -1,5 +1,10 @@
 # Results: Upscaled Modded Textures - generated through Machine Learning
 
+Hi, welcome to my project!
+This codebase implements a Generative Adversarial Network (GAN) utilizing ResNet (generator) in a structured pipeline for Minecraft texture generation.
+
+Please refer to [how_to_use](https://github.com/gametekker/InterpretableGAN/blob/main/Upscale/how_to_use.md) for setting up.
+
 ## Currently supports 16x -> 32x, 64x
 ![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.49.37%20AM.png)
 Industrial craft 2
