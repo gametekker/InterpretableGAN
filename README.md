@@ -1,3 +1,5 @@
+![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.17.15%20AM.png)
+
 # Minecraft Texture Upscaler: Bridging Vanilla and Modded Textures
 
 ## Problem Statement:
