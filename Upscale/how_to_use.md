@@ -28,6 +28,8 @@ Each "Upscale_date/time" folder represents training for a given hyperparameters 
     - ...
   - ...
 
+## Environment
+See `environment.yml` in the top level directory for installing necessary dependencies via conda.
 
 ## Starting a project *(for given texture pack)*
 ### Setup for a particular dataset (for particular resource pack):
