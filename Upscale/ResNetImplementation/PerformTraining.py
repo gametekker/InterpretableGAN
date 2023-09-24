@@ -12,7 +12,7 @@ from ResNetImplementation.SpecialDiscriminator import Discriminator
 from ResNetImplementation.train import train_loop, train_generator
 from ResNetImplementation.VGGPerceptualLoss import VGGPerceptualLoss
 
-def PerformTraining(config,hyperparameters):
+def PerformTraining(config,hyperparameters,experimentlogger):
 
     """
     Load configuration
@@ -70,7 +70,7 @@ def PerformTraining(config,hyperparameters):
     """
 
     # Train the generator without adversarial
-    train_generator(generator,dataloader,optimizer_G,loss=perceptual_loss_fn,device=device, end_epoch=generator_only_epochs)
+    train_generator(experimentlogger,generator,dataloader,optimizer_G,loss=perceptual_loss_fn,device=device, end_epoch=generator_only_epochs)
 
     # Train the generator, discriminator
-    train_loop(generator,discriminator,dataloader,optimizer_G,optimizer_D,adversarial_loss=adversarial_loss,total_loss=augmented_loss,device=device, end_epoch=epochs)
+    train_loop(experimentlogger,generator,discriminator,dataloader,optimizer_G,optimizer_D,adversarial_loss=adversarial_loss,total_loss=augmented_loss,device=device, end_epoch=epochs)
