@@ -1,5 +1,10 @@
 # Results: High Resolution Modded Textures - generated through Machine Learning
 
+## Currently supports 16x -> 32x, 64x
+![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.49.21%20AM.png)
+Industrial craft 2
+
+
 ## Adversarial vs perceptual loss only
 
 ![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.17.15%20AM.png)
