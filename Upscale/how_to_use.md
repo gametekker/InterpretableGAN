@@ -1,18 +1,18 @@
 # How to use
 ## Project structure
-Generally, the structure of the pipeline is separated into distinct **projects** for different resource packs:
-  - Project_1 (Resource Pack A)
+Generally, the structure of the pipeline is separated into distinct **projects** for different texture/resource packs:
+  - Project_1 (Texture Pack A)
     - Upscale_date/time
       - ...
     - Upscale_date/time
       - ...
     - ...
-  - Project_2 (Resource Pack B)
+  - Project_2 (Texture Pack B)
     - Upscale_date/time
       - ...
     - ...
   - ...
-  - Project_N (Resource Pack N)
+  - Project_N (Texture Pack N)
     - ...
 
 Each "Upscale_date/time" folder represents training for a given hyperparameters configuration
@@ -31,8 +31,8 @@ Each "Upscale_date/time" folder represents training for a given hyperparameters 
 ## Environment
 See `environment.yml` in the top level directory for installing necessary dependencies via conda.
 
-## Starting a project *(for given texture pack)*
-### Setup for a particular dataset (for particular resource pack):
+## Starting a project *(for given texture/resource pack)*
+### Setup for a particular dataset (for particular texture/resource pack):
 0) To begin, initialize `config.yml`:
    1) Set `project_dir` to the folder you would like to use for your project
    2) Set `scaling_factor` to 2 for 32x pack, 4 for 64x pack
