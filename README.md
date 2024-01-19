@@ -1,6 +1,6 @@
 # Results: Upscaled Modded Textures - using GANs
 
-Hi, welcome to my project!
+Hi, welcome to my project! 
 This codebase implements a Generative Adversarial Network (GAN) utilizing ResNet (generator) in a structured pipeline for Minecraft texture generation.
 
 Please refer to [how_to_use](https://github.com/gametekker/InterpretableGAN/blob/main/Upscale/how_to_use.md) for setting up.
