@@ -33,7 +33,7 @@ There are currently 100,000 Minecraft mods available, many of which introduce ne
 
 ### Texture Packs: 
 
-To further embellish the game, there are 100,000 Minecraft texture packs that provide high-resolution textures, enriching the visual depth of the game environment.
+To further embellish the game, there are thousands of Minecraft texture packs that provide high-resolution textures, enriching the visual depth of the game environment.
 
 While these contributions significantly expand the game's potential, they inadvertently introduce a dilemma:
 
