@@ -1,26 +1,3 @@
-# Results: Upscaled Modded Textures - using GANs
-
-Hi, welcome to my project! 
-This codebase implements a Generative Adversarial Network (GAN) utilizing ResNet (generator) in a structured pipeline for Minecraft texture generation.
-
-Please refer to [how_to_use](https://github.com/gametekker/InterpretableGAN/blob/main/Upscale/how_to_use.md) for setting up.
-
-## Currently supports 16x -> 32x, 64x
-![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.49.37%20AM.png)
-Industrial craft 2
-![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%205.43.07%20PM.png)
-Industrial craft 2
-![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.53.10%20AM.png)
-
-
-
-## Adversarial vs perceptual loss only
-
-![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.17.15%20AM.png)
-500 epochs, adversarial loss annealing + perceptual loss
-![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.17.22%20AM.png)
-500 epochs, perceptual loss only
-
 # Context: Minecraft Texture Upscaler - Bridging Vanilla and Modded Textures
 
 ## Problem Statement:
@@ -52,6 +29,29 @@ By training on vanilla textures, our model learns the intricate nuances of upsca
 ### Modded Textures Upscaling: 
 
 The true strength of our framework shines when it's applied to modded textures. It efficiently scales the 16x16 modded textures, ensuring that they not only elevate in resolution but also seamlessly blend with the texture pack's style without forsaking the original design ethos of the mod.
+
+# Results: Upscaled Modded Textures - using GANs
+
+Hi, welcome to my project! 
+This codebase implements a Generative Adversarial Network (GAN) utilizing ResNet (generator) in a structured pipeline for Minecraft texture generation.
+
+Please refer to [how_to_use](https://github.com/gametekker/InterpretableGAN/blob/main/Upscale/how_to_use.md) for setting up.
+
+## Currently supports 16x -> 32x, 64x
+![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.49.37%20AM.png)
+Industrial craft 2
+![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%205.43.07%20PM.png)
+Industrial craft 2
+![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.53.10%20AM.png)
+
+
+
+## Adversarial vs perceptual loss only
+
+![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.17.15%20AM.png)
+500 epochs, adversarial loss annealing + perceptual loss
+![Example Image](https://github.com/gametekker/InterpretableGAN/blob/main/Screen%20Shot%202023-09-24%20at%203.17.22%20AM.png)
+500 epochs, perceptual loss only
 
 ## Conclusion:
 
